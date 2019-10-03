@@ -36,7 +36,7 @@ public class Heap703 {
     public static void main(String[] args) {
         int k = 3;
         int[] arr = {4,5,8,2};
-        KthLargest2 kthLargest = new KthLargest2(3, arr);
+        KthLargest2 kthLargest = new KthLargest2(k, arr);
         kthLargest.add(3);// returns 4
         kthLargest.add(5);// returns 5
         kthLargest.add(10);// returns 5
@@ -44,6 +44,10 @@ public class Heap703 {
         kthLargest.add(4);// returns 8
     }
 
+    /**
+     * 执行用时 :74 ms, 在所有 Java 提交中击败了99.19%的用户
+     * 内存消耗 :47.8 MB, 在所有 Java 提交中击败了93.52%的用户
+     */
     static class KthLargest2 {
         PriorityQueue<Integer> minHeap;
         int k;
@@ -56,10 +60,16 @@ public class Heap703 {
         }
 
         public int add(int val) {
-            minHeap.offer(val);
-            System.out.println(minHeap);
-            System.out.println(minHeap.size() >=k ? (int) minHeap.toArray()[minHeap.size() - k] : 0);
-            return minHeap.size() >=k ? (int) minHeap.toArray()[minHeap.size() - k] : 0;
+            if (minHeap.size() < k) {
+                minHeap.offer(val);
+            } else {
+                if (minHeap.peek() < val) {
+                    minHeap.poll();
+                    minHeap.offer(val);
+                }
+            }
+            System.out.println(minHeap.peek());
+            return minHeap.peek();
         }
     }
     /**
