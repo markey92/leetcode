@@ -1,3 +1,5 @@
+package list;
+
 public class List896 {
 
     public static void main(String[] args) {
