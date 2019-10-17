@@ -14,6 +14,14 @@ public class Stack636 {
         });
         exclusiveTime(n, logs);
     }
+
+    /**
+     * 执行用时 :160 ms, 在所有 java 提交中击败了5.00%的用户
+     * 内存消耗 :39.2 MB, 在所有 java 提交中击败了94.29%的用户
+     * @param n
+     * @param logs
+     * @return
+     */
     public static int[] exclusiveTime(int n, List<String> logs) {
         int[] result = new int[n];
         Stack<String> stack = new Stack<>();
