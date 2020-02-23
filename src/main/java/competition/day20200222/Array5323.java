@@ -1,9 +1,7 @@
 package competition.day20200222;
 
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 /**
  * @ProjectName: leetcode
@@ -63,13 +61,9 @@ import java.util.Comparator;
 public class Array5323 {
     public int[] sortByBits(int[] arr) {
         arr = Arrays.stream(arr).
-
                 boxed().
-
                 sorted((o1, o2) -> getBits(o1) == getBits(o2) ? o1 - o2 : getBits(o1) - getBits(o2)). // sort descending
-
-                mapToInt(i -> i).
-
+                mapToInt(Integer::intValue).
                 toArray();
         return arr;
     }
