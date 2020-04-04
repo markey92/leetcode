@@ -12,7 +12,7 @@ import java.util.List;
  * @Date: 2020/2/9 11:39
  * @Version: 1.0
  */
-public class Db5335 {
+public class Dp5335 {
 //    public int maxStudents(char[][] seats) {
 //        int[][] sit = new int[seats.length][seats[0].length];
 //        int[][] noSit = new int[seats.length][seats[0].length];

@@ -1,4 +1,4 @@
-package competition.dat20200126;
+package competition.day20200126;
 
 /**
  * @ProjectName: leetcode
