@@ -1,5 +1,7 @@
 package tree;
 
+import utils.TreeNode;
+
 import java.util.Stack;
 
 /**
@@ -40,13 +42,6 @@ import java.util.Stack;
  * @Version: 1.0
  */
 public class Tree173 {
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
 
     /**
      * 执行用时 :80 ms, 在所有 java 提交中击败了89.40%的用户
