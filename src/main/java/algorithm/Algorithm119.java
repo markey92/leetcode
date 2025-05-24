@@ -42,4 +42,9 @@ public class Algorithm119 {
         }
         return result;
     }
+
+    public static void main(String[] args) {
+        List<Integer> result = new Algorithm119().getRow(1);
+        System.out.println(result);
+    }
 }

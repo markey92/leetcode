@@ -1,7 +1,5 @@
 package string;
 
-import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
-
 /**
  * @ProjectName: leetcode
  * @Package: string

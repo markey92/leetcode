@@ -1,7 +1,5 @@
 package string;
 
-import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
-
 import java.util.HashMap;
 import java.util.Map;
 

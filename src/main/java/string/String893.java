@@ -1,7 +1,5 @@
 package string;
 
-import sun.security.util.ArrayUtil;
-
 import java.util.*;
 
 /**
